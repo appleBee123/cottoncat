@@ -22,12 +22,21 @@
             font-family: arial;
         }
 
-        body{
-            background: url(images/background.jpg);
-            /* opacity: 0.5; */
-            background-size: cover;
+        body{   
+            position: relative;
             height: 100vh;
-            background-position: center;  
+        }
+
+        body::before{
+            content: "";
+            background-image: url(images/background.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
         }
 
         header{
@@ -40,7 +49,6 @@
             z-index: 99;
             box-shadow: 0 0 10px #000;
             background: rgba(0,0,0,0.5);
-
         }
 
         #chk1{
@@ -156,23 +164,52 @@
             display: flex;
             justify-content: center;
             padding-top: 10%;
+            position: relative;
         }
         
-        .newp{
+        #newp{
             font-family: "Briem Hand", cursive;
             font-optical-sizing: auto;
-            font-weight: 100;
+            font-weight: 200;
             font-style: normal;
+            font-size: 30px;
         }
         
         .newToys{
             display: flex;
             justify-content: center;
-            padding-top: 10%;
+            position: relative;
+        }
+        
+        .newToysdiv{
+            padding: 10px; 
         }
 
-        .newToysdiv{
-            padding: 10px
+        .trendingDiv{
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+            position: relative;
+        }
+        
+        #trendingp{
+            font-family: "Briem Hand", cursive;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 30px;
+        }
+        
+        .trendingToys{
+            display: flex;
+            justify-content: center;
+            /* padding-top: 10%; */
+            position: relative;
+        }
+        
+        .trendingToysdiv{
+            padding: 10px;
+           
         }
         </style>
 </head>
@@ -209,17 +246,52 @@
 
     <div class="newDiv">
         <div>
-            <p id="newp">New</p1>
+            <p id="newp">New Arrivals</p>
             
         </div>
     </div>
 
     <div class="newToys">
-        <div class="newToysdiv" data-aos="fade-up"><img src="images/barth.webp" width="200px" height="200px"></div>
-        <div class="newToysdiv" data-aos="fade-up"><img src="images/dragon.jpg" width="200px" height="200px"></div>
-        <div class="newToysdiv" data-aos="fade-up"><img src="images/lion.jpg" width="200px" height="200px"></div>
-        <div class="newToysdiv" data-aos="fade-up"><img src="images/gryphon.jpg" width="200px" height="200px"></div>
-        <div class="newToysdiv" data-aos="fade-up"><img src="images/frog2.jpg" width="200px" height="200px"></div>
+        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/barth.webp"  onmouseover="this.src='images/barth2.webp'" onmouseout="this.src='images/barth.webp'" width="200px" height="200px">
+        </div>
+        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/dragon.jpg"  onmouseover="this.src='images/dragon2.jpg'" onmouseout="this.src='images/dragon.jpg'" width="200px" height="200px">
+        </div>
+        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/lion.jpg"  onmouseover="this.src='images/lion2.jpg'" onmouseout="this.src='images/lion.jpg'" width="200px" height="200px">
+        </div>
+        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/gryphon.jpg"  onmouseover="this.src='images/gryphon2.jpg'" onmouseout="this.src='images/gryphon.jpg'" width="200px" height="200px">
+        </div>
+        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/frog2.jpg"  onmouseover="this.src='images/frog3.jpg'" onmouseout="this.src='images/frog2.jpg'" width="200px" height="200px">
+        </div>
+    </div>
+
+    <div class="trendingDiv">
+        <div>
+            <p id="newp">Trending</p>
+            
+        </div>
+    </div>
+
+    <div class="trendingToys">
+        <div class="trendingToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/bunny.jpg"  onmouseover="this.src='images/bunny2.jpg'" onmouseout="this.src='images/bunny.jpg'" width="200px" height="200px">
+        </div>
+        <div class="trendingToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/giraffe.webp"  onmouseover="this.src='images/giraffe2.webp'" onmouseout="this.src='images/giraffe.webp'" width="200px" height="200px">
+        </div>
+        <div class="trendingToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/bee.webp"  onmouseover="this.src='images/bee2.webp'" onmouseout="this.src='images/bee.webp'" width="200px" height="200px">
+        </div>
+        <div class="trendingToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/monkey.webp"  onmouseover="this.src='images/monkey2.webp'" onmouseout="this.src='images/monkey.webp'" width="200px" height="200px">
+        </div>
+        <div class="trendingToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/fox.webp"  onmouseover="this.src='images/fox2.webp'" onmouseout="this.src='images/fox.webp'" width="200px" height="200px">
+        </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
