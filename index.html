@@ -185,6 +185,21 @@
             padding: 10px; 
         }
 
+        .container{
+            position: relative
+        }
+
+        .upper-image{
+            position: absolute;
+            left: 0;
+            transition: opacity 0.5s;
+            opacity: 0
+        }
+
+        .upper-image:hover{
+            opacity: 1
+        }
+
         .trendingDiv{
             display: flex;
             justify-content: center;
@@ -252,20 +267,29 @@
     </div>
 
     <div class="newToys">
-        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
-            <img src="images/barth.webp"  onmouseover="this.src='images/barth2.webp'" onmouseout="this.src='images/barth.webp'" width="200px" height="200px">
+        <div class="newToysdiv container" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/barth.webp" width="200px" height="200px">
+            <img src="images/barth2.webp" width="200px" height="200px" class="upper-image">
         </div>
-        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
-            <img src="images/dragon.jpg"  onmouseover="this.src='images/dragon2.jpg'" onmouseout="this.src='images/dragon.jpg'" width="200px" height="200px">
+
+        <div class="newToysdiv container" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/dragon.jpg"  width="200px" height="200px">
+            <img src="images/dragon2.jpg"  width="200px" height="200px" class="upper-image">
         </div>
-        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
-            <img src="images/lion.jpg"  onmouseover="this.src='images/lion2.jpg'" onmouseout="this.src='images/lion.jpg'" width="200px" height="200px">
+
+        <div class="newToysdiv container" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/lion.jpg"  width="200px" height="200px">
+            <img src="images/lion2.jpg"  width="200px" height="200px" class="upper-image">
         </div>
-        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
-            <img src="images/gryphon.jpg"  onmouseover="this.src='images/gryphon2.jpg'" onmouseout="this.src='images/gryphon.jpg'" width="200px" height="200px">
+
+        <div class="newToysdiv container" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/gryphon.jpg" width="200px" height="200px">
+            <img src="images/gryphon2.jpg" width="200px" height="200px" class="upper-image">
         </div>
-        <div class="newToysdiv" data-aos = "fade-up" data-aos-duration = "1000">
-            <img src="images/frog2.jpg"  onmouseover="this.src='images/frog3.jpg'" onmouseout="this.src='images/frog2.jpg'" width="200px" height="200px">
+
+        <div class="newToysdiv container" data-aos = "fade-up" data-aos-duration = "1000">
+            <img src="images/frog2.jpg"  width="200px" height="200px">
+            <img src="images/frog3.jpg"  width="200px" height="200px" class="upper-image">
         </div>
     </div>
 
