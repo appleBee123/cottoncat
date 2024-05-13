@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -13,220 +14,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Cute+Font&display=swap" rel="stylesheet">
 
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: arial;
-        }
-
-        body{   
-            position: relative;
-            height: 100vh;
-        }
-
-        body::before{
-            content: "";
-            background-image: url(images/background.jpg);
-            background-size: cover;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            opacity: 0.5;
-        }
-
-        header{
-            width: 100%;
-            height: 100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            z-index: 99;
-            box-shadow: 0 0 10px #000;
-            background: rgba(0,0,0,0.5);
-        }
-
-        #chk1{
-            display: none
-        }
-
-        i{
-            color: #fff;     
-        }
-
-        header .logo{
-            flex: 1;
-            color: #fff;
-            margin-left: 50px;
-            text-transform: uppercase;
-            font-size: 15px
-        }
-
-        header .search-box{
-            flex: 1;
-            position: relative;
-        }
-
-        .search-box input{
-            width: 100%;
-            height: 40px;
-            border: none;
-            /* outline: none; */
-            background: #f2f2f2;
-            border-radius: 30px;
-            color: gray;
-            font-size: 16;
-            text-align: center;
-            padding-left: 5px;
-            padding-right: 40px
-        }
-
-        .search-box button{
-            width: 40px;
-            height: 40px;
-            border-radius: 30px;
-            border: none;
-            position: absolute;
-            top: 0;
-            right: 0;
-            transform: scale(0.9);
-            background: green;
-        }
-
-        header ul{
-            flex: 2;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        header ul li{
-            list-style: none;
-        }
-
-        header ul li a{
-            text-decoration: none;
-            color: #fff;
-            font-weight: 600;
-            text-transform: uppercase;
-            padding: 10px 15px
-        }
-
-        header ul li a:hover{
-            border-bottom: 2px solid cadetblue;
-        }
-
-        header .menu{
-            font-size: 2.5em;
-            display: none;
-        }
-
-        @media(max-width: 1000px){
-            .search-box button{
-                position: absolute
-            }
-            header ul{
-                position: fixed;
-                top: 100px;
-                right: -100%;
-                background: rgba(0,0,0,0.5);
-                height: calc(100vh - 100px);
-                width: 50%;
-                flex-direction: column;
-                align-items: center;
-                transition: right 0.5s linear;
-            }
-            header .menu{
-                display: block;
-                width: 100px;
-                text-align: center
-            }
-            #chk1:checked ~ ul{
-                right: 0
-            }
-        }
-
-        @media(max-width:600px){
-            header .logo{
-                font-size: 10px;
-                margin-left: 8px;
-            }
-            header ul{
-                width: 100%
-            }
-        }
-
-        .newDiv{
-            display: flex;
-            justify-content: center;
-            padding-top: 10%;
-            position: relative;
-        }
-        
-        #newp{
-            font-family: "Briem Hand", cursive;
-            font-optical-sizing: auto;
-            font-weight: 200;
-            font-style: normal;
-            font-size: 30px;
-        }
-        
-        .newToys{
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-        
-        .newToysdiv{
-            padding: 10px; 
-        }
-
-        .container{
-            position: relative
-        }
-
-        .upper-image{
-            position: absolute;
-            left: 0;
-            transition: opacity 0.5s;
-            opacity: 0
-        }
-
-        .upper-image:hover{
-            opacity: 1
-        }
-
-        .trendingDiv{
-            display: flex;
-            justify-content: center;
-            padding-top: 10%;
-            position: relative;
-        }
-        
-        #trendingp{
-            font-family: "Briem Hand", cursive;
-            font-optical-sizing: auto;
-            font-weight: 200;
-            font-style: normal;
-            font-size: 30px;
-        }
-        
-        .trendingToys{
-            display: flex;
-            justify-content: center;
-            /* padding-top: 10%; */
-            position: relative;
-        }
-        
-        .trendingToysdiv{
-            padding: 10px;
-           
-        }
-        </style>
 </head>
 <body>
     <header>
@@ -257,6 +44,17 @@
 
         </div>
     </header>
+
+    <div id="gallery">
+        <img src="images/barth.webp" height="500px" width="1000px" class="slide">
+        <img src="images/barth2.webp" height="500px" width="1000px"  class="slide">
+        <img src="images/bear.jpg" height="500px" width="1000px"  class="slide">
+        <img src="images/bear.webp" height="500px" width="1000px"  class="slide">
+    </div>
+    <div class="btns">
+        <button id="prev-button">Prev</button>
+        <button id="next-button">Next</button>
+    </div>
 
 <section id="manyToys">
     
@@ -325,6 +123,11 @@
         </div>
     </div>
 
+    <div class="cover">
+        (covering up so you can see the effect)
+      </div>
+
+      <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
