@@ -164,10 +164,40 @@ header .menu {
     
 }
 
+.slider-wrapper{
+    position: relative
+}
+
+.slide-button{
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    background: #000;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    /* transform: translateY(-50%) */
+}
+
+.slide-button:hover{
+    background: grey
+}
+
+#prev-slide{
+    left: -20px
+}
+#next-slide{
+    right: -20px
+}
+
 .image-list{
     display: grid;
     
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
+    grid-template-columns: repeat(2,1fr);
 
     gap: 2%;
 
@@ -180,8 +210,8 @@ header .menu {
     object-fit: cover
 }
 
-.slider-scrollbar{
-    height: 24px;
+.slider-scrollbar{                           /**/
+    height: 24px; 
     width: 40%;
     
     display: flex;
@@ -189,6 +219,10 @@ header .menu {
     
 
 }
+
+
+
+
 
 .scrollbar-track{
     height: 2px;
@@ -198,7 +232,7 @@ header .menu {
     border-radius: 4px
 }
 
-.scrollbar-thumb{
+.scrollbar-thumb{          /**/
     position: absolute;
     height: 100%;
     width: 50%;
@@ -207,6 +241,19 @@ header .menu {
     cursor: grab
 
 }
+
+
+.scrollbar-track:hover{
+    height: 4px
+}
+
+.scrollbar-thumb:active{            
+    cursor: grabbing;
+    height: 8px;
+    top: -2px
+}
+
+
 
 .scrollbar-thumb::after{
     content: "";

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="design.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -48,11 +53,16 @@
     <div class="container">
 
         <div class="slider-wrapper">
+
+            <button id="prev-slide" class="slide-button material-symbols-outlined">chevron_left</button>
             <div class="image-list">
                 <img src="images/bunny.jpg" class="image-item">
                 <img src="images/bunny2.jpg" class="image-item">
+                <img src="images/bee.webp" class="image-item">
+                <img src="images/bee2.webp" class="image-item">
                 
             </div>
+            <button id="next-slide" class="slide-button material-symbols-outlined">chevron_right</button>
         </div>
 
         <div class="slider-scrollbar">
@@ -135,7 +145,7 @@
         (covering up so you can see the effect)
       </div>
 
-      <script src="app.js"></script>
+      <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
