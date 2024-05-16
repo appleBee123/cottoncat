@@ -160,6 +160,11 @@ header .menu {
     justify-content: center;
     padding-top: 10%;
 
+    min-height: 100vh;          /**/
+    background: white;        /**/
+
+    
+
     flex-direction: column
     
 }
@@ -197,11 +202,17 @@ header .menu {
     display: grid;
     
     /* grid-template-columns: auto auto; */
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(10,1fr);
 
     gap: 2%;
+    overflow-x: auto;
+    scrollbar-width: none;
 
     margin-bottom: 30px
+}
+
+.image-list::-webkit-scrollbar{
+    display: none
 }
 
 .image-item{
