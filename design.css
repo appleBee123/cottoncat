@@ -154,14 +154,14 @@ header .menu {
     }
 }
 
-.container{
+/* .container{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 10%;
 
-    min-height: 100vh;          /**/
-    background: white;        /**/
+    min-height: 100vh;         
+    background: white;        
 
     
 
@@ -171,9 +171,9 @@ header .menu {
 
 .slider-wrapper{
     position: relative
-}
+} */
 
-.slide-button{
+/* .slide-button{
     position: absolute;
     top: 40%;
     height: 50px;
@@ -184,10 +184,10 @@ header .menu {
     font-size: 2.2rem;
     cursor: pointer;
     border-radius: 50%;
-    /* transform: translateY(-50%) */
-}
+    /* transform: translateY(-50%) 
+} */
 
-.slide-button:hover{
+/* .slide-button:hover{
     background: grey
 }
 
@@ -201,7 +201,7 @@ header .menu {
 .image-list{
     display: grid;
     
-    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: auto auto; 
     grid-template-columns: repeat(10,1fr);
 
     gap: 2%;
@@ -213,15 +213,15 @@ header .menu {
 
 .image-list::-webkit-scrollbar{
     display: none
-}
+} */
 
-.image-item{
+/* .image-item{
     width: 325px;
     height: 400px;
     object-fit: cover
 }
 
-.slider-scrollbar{                           /**/
+.slider-scrollbar{                           
     height: 24px; 
     width: 40%;
     
@@ -241,9 +241,9 @@ header .menu {
     background: #ccc;
     position: relative;
     border-radius: 4px
-}
+} */
 
-.scrollbar-thumb{          /**/
+/* .scrollbar-thumb{          
     position: absolute;
     height: 100%;
     width: 50%;
@@ -273,7 +273,51 @@ header .menu {
     right: 0;
     top: -10px;
     bottom: -10px
+} */
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+    position: relative;
 }
+
+.welcomediv{
+    /* height: 100px;
+    width: 100px; 
+     background-color: aqua; */
+     position: relative;
+     color: white;
+     margin: 2%
+}
+
+.text1{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    /* z-index: 50; */
+    text-align: right;
+    text-shadow: 2px 2px #968c8c;
+}
+.text2{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    /* z-index: 50; */
+    text-align: right;
+    text-shadow: 2px 2px #968c8c;
+}
+.text3{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    /* z-index: 50; */
+    text-align: right;
+    color: rgb(219, 133, 190);
+    text-shadow: 2px 2px #FF0000;
+}
+
+
 
 
 .newDiv {
