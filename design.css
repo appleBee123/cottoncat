@@ -6,12 +6,13 @@
 }
 
 body {
-    position: relative;
-    
-    
+    /* position: relative; */
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
 }
 
-body::before {
+/* body::before {
     content: "";
     background-image: url(images/background.jpg);
 
@@ -27,7 +28,7 @@ body::before {
     bottom: 0px;
     left: 0px;
     opacity: 0.5;
-}
+} */
 
 header {
     width: 100%;
