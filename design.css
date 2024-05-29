@@ -4,13 +4,13 @@
     box-sizing: border-box;
     font-family: arial;
 }
-
-body {
-    /* position: relative; */
+/* 
+ body {
+     position: relative; 
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;    
-}
+}  */
 
 /* body::before {
     content: "";
@@ -29,6 +29,24 @@ body {
     left: 0px;
     opacity: 0.5;
 } */
+
+ body {
+    position: relative;
+  }
+  
+  body::after {
+    content: "";
+    background: url(images/background.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  } 
 
 header {
     width: 100%;
