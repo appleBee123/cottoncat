@@ -406,10 +406,21 @@ header .menu {
 
 }
 
-.cover {
-    background-color: aqua;
-    height: 50vh;
-    margin-top: 90vh;
-    padding: 20px;
-  }
+.api{
+    border: 2px solid black;
+    width: 50%;
+    height: 100px;
+}
+
+.flexbox a{
+    padding: 5%;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#catg::after{
+    content: url(images/catface2.png);
+    height: auto;
+    width: 5px
+}
   
