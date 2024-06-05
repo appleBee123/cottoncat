@@ -419,8 +419,6 @@ header .menu {
 }
 
 #catg::after{
-    content: url(images/catface2.png);
-    height: auto;
-    width: 5px
+    content: url('images/catfacepngsmall.png');
 }
   
