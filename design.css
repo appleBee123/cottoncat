@@ -342,8 +342,7 @@ header .menu {
 .newDiv {
     display: flex;
     justify-content: center;
-    padding-top: 10%;
-    position: relative;
+    padding-top: 5%;
 }
 
 #newp {
@@ -357,15 +356,6 @@ header .menu {
 .newToys {
     display: flex;
     justify-content: center;
-    position: relative;
-}
-
-.newToysdiv {
-    padding: 10px;
-}
-
-.container {
-    position: relative
 }
 
 .upper-image {
