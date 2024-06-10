@@ -22,6 +22,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Cute+Font&display=swap" rel="stylesheet">
+
+<script src="jquery-3.7.1.js"></script>
 <script src="logic.js"></script>
 </head>
 <body onload="catLoad()">
@@ -34,11 +36,23 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <ul>
+        <ul class="relative">
             <li><a href="#">Animals</a></li>
             <li><a href="#">Baby</a></li>
             <li><a href="#">Fantasy</a></li>
-            <li><a href="#">All</a></li>
+            <li id="showdiv"><a href="#">All</a></li>
+            
+            <!--show div start-->
+            <div class="flyout">&nbsp;
+                <h1>this is the flyout</h1>
+                <div class="photo-container">
+
+                    <img class="photo-info" src="images/gift.webp" height="80px" width="80px">
+                </div>
+            </div>
+            <!--show div end-->
+            <!--the code u wrote for hover on 'All', write it for flyout div too, and see if it works -->
+
             <li>
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -198,6 +212,7 @@
     <script>
       AOS.init();
     </script>
+    
     
 </body>
 </html>

@@ -60,6 +60,24 @@ header {
     background: rgba(0, 0, 0, 0.5);
 }
 
+.flyout {
+    position: absolute;
+    right: 5%;
+    top: 150%;
+    width: 1000px;
+    height: 450px;
+    background: white;
+    overflow: hidden;
+    z-index: 10000;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+}
+
+#showdiv:hover + .flyout {
+    display: block;
+}
+
 #chk1 {
     display: none
 }
